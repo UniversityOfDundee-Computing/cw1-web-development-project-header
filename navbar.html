@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbar.css"> <!-- link to the CSS stylesheet -->
+    <!-- This link imports from font Awesome icons. Here, it's used for the hamburger menue icon -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Here is the navbar font-family import for Roboto and Space Grotesk -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk&display=swap');
+    </style>
+    <title>Mclaren F1</title>
+</head>
+
+<body>
+    <!-- navbar section -->
+    <nav>
+        <!--  <Mclaren logo and link to homepage and display the logo on the Navbar -->
+        <a href="#home" id="logo"><img src="McLaren_Racing_logo.svg" alt="mclaren logo"></a>
+        <!-- hamburger menue -->
+        <input type="checkbox" id="hamburger" />
+        <label for="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- Navigation Links -->
+        <ul>
+            <li>
+                <a href="#home" class="active">Home</a>     
+            </li>
+            <li>
+                <a href="#performances">Performances</a>
+            </li>
+            <li>
+                <a href="#motorsport">Motorsport</a>
+            </li>
+            <li>
+                <a href="history.html">History</a>
+            </li>
+            <li>
+                <a href="#reference">Reference</a>
+            </li>
+        </ul>
+
+    </nav>
+</body>
+
+</html>
