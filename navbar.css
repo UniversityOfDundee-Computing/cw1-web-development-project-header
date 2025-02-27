@@ -1,3 +1,6 @@
+/* Here is the navbar font-family import for Roboto and Space Grotesk */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk&display=swap');
+
 /* Global styles */
 * {
     padding: 0;
@@ -5,10 +8,12 @@
     box-sizing: border-box;
 }
 
+
+
 /* navbar styles  */
 nav {
-    font-family: "Space Grotesk", sans-serif;
     /* font family that we imported from google fonts */
+    font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
     font-weight: 700;
     font-style: normal;
@@ -17,6 +22,12 @@ nav {
     justify-content: space-between;
     background-color: white;
     padding: 1em;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    box-shadow: 0 2px 5px #ff7200;
+
 
 }
 
@@ -35,37 +46,38 @@ nav a {
     /*prevents logo from shrinking when the screen size is reduced */
 }
 
-/* Checkbox and label (Hamburger Menue) styling */
+/* Checkbox and .nav-label (Hamburger Menue) styling */
 /* The checkbox (used for hamburger menu) is hidden by removing its default appearance using appearance: none */
 input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
 }
 
-/* The label is also hidden initially with display: None */
-label {
+
+/* The .nav-label is also hidden initially with display: None */
+.nav-label {
     display: none;
 }
 
 /* unordered list */
-ul {
+#navlist {
     list-style: none;
     display: flex;
     justify-content: center;
     flex-grow: 1;
     padding: 0;
     margin: 0;
-    gap: 1em;
+    gap: 1px;
 
 }
 
 /* List items */
-ul li {
+#navlist li {
     margin: 0 1em;
 }
 
 /* Navbar Links */
-ul a {
+#navlist a {
     text-decoration: none;
     color: black;
     text-transform: uppercase;
@@ -73,8 +85,8 @@ ul a {
 }
 
 /* Hover effects  */
-ul a:hover {
-    background-color: #fe8100;
+#navlist a:hover {
+    background-color: #ff7200;
     border-radius: 0.5em;
 }
 
@@ -88,22 +100,34 @@ ul a:hover {
 #logo img {
     width: auto;
     height: 54.5px;
-    width: auto;
     transition: height 0.3s ease;
     /* for smooth resizing effect */
 }
 
 /* Media queries for Mobile view */
-@media screen and (max-width: 930px) {
+@media screen and (max-width: 950px) {
 
-    /* Label hamburger menue */
-    label {
+    nav {
+        padding: 1em;
+        position: sticky;
+        top: 0;
+        z-index: 1000;
+    }
+
+    input[type="checkbox"] {
+        appearance: none;
+        -webkit-appearance: none;
+    }
+
+
+    /* .nav-label hamburger menue */
+    .nav-label {
         cursor: pointer;
         display: block;
     }
 
     /* Unordered list styling */
-    ul {
+    #navlist {
         font-size: 1.2em;
         position: absolute;
         left: -100%;
@@ -115,18 +139,35 @@ ul a:hover {
         top: 93.39px;
         width: 100%;
         /* The links are centered and the menu takes full height of the screen */
-        height: calc(100vh - 93.4px);
+        height: calc(100vh - 93.39px);
+        transition: left 0.3s ease;
 
     }
 
     /* Checkbox interaction */
-    input[type="checkbox"]:checked~ul {
+    input[type="checkbox"]:checked~#navlist {
         left: 0;
     }
 
     /* hover effect on the list */
-    ul a:hover {
-        background-color: #fe8100;
+    #navlist a:hover {
+        background-color: #ff7200;
     }
 
+}
+
+@media screen and (min-width:951px) {
+    input[type='checkbox'] {
+        display: none;
+    }
+
+    .nav-label {
+        display: none;
+    }
+
+    #navlist {
+        display: flex;
+        justify-content: center;
+
+    }
 }
