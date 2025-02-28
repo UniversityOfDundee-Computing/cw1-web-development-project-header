@@ -11,50 +11,51 @@
         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"
         defer></script>
     <link href="History.css" rel="stylesheet">
+    <link rel="stylesheet" href="navbar.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <header>
-        <nav>
-            <!--  <Mclaren logo and link to homepage and display the logo on the Navbar -->
-            <a href="#home" id="logo"><img src="McLaren_Racing_logo.svg" alt="mclaren logo"></a>
-            <!-- hamburger menue -->
-            <input type="checkbox" id="hamburger" />
-            <label for="hamburger">
-                <i class="fa-solid fa-bars"></i>
-            </label>
-            <!-- Navigation Links -->
-            <ul>
-                <li>
-                    <a href="#home" class="active">Home</a>     
-                </li>
-                <li>
-                    <a href="#performances">Performances</a>
-                </li>
-                <li>
-                    <a href="#motorsport">Motorsport</a>
-                </li>
-                <li>
-                    <a href="history.html">History</a>
-                </li>
-                <li>
-                    <a href="#reference">Reference</a>
-                </li>
-            </ul>
-
-        </nav>
-    </header>
+    <nav>
+        <!--  <Mclaren logo and link to homepage and display the logo on the Navbar -->
+        <a href="homepage.html" id="logo"><img src="McLaren_Racing_logo.svg" alt="mclaren logo"></a>
+        <!-- hamburger menue -->
+        <input type="checkbox" id="hamburger" />
+        <label class="nav-label" for="hamburger">
+            <i class="fa-solid fa-bars"></i>
+        </label>
+        <!-- Navigation Links -->
+        <ul id="navlist">
+            <li>
+                <a href="homepage.html">Home</a>
+            </li>
+            <li>
+                <a href="#performances">Performances</a>
+            </li>
+            <li>
+                <a href="motorsport.html">Motorsport</a>
+            </li>
+            <li>
+                <a href="history.html">History</a>
+            </li>
+            <li>
+                <a href="ref.html">Reference</a>
+            </li>
+        </ul>
+    </nav>
     <main>
         <div class="custom-accordion">
             <div class="accordion-item text-center">
                 <h2 class="accordion-header text-center">
-                    <button class="filling-button mt-5 accordion-button collapsed" type="button"
-                        data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false"
-                        aria-controls="flush-collapseOne">
+                    <button class="filling-button mt-5 accordion-button" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
                         <span>Production Begins</span>
                     </button>
                 </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionFlushExample">
+                <div id="collapseOne" class="accordion-collapse collapse show" data-bs-parent="#accordionExample">
                     <div class="container text-break accordion-body">
                         <div class="row align-items-center">
                             <div class="col-7 image-container">
@@ -68,29 +69,40 @@
                             <div class="col-5 _text">
                                 <h3>1992-1994</h3>
                                 <h1>Production Begins</h1>
-                                <div class="classboxy"></div>
-                                <div>1992</div>
-                                <p><!-- justification to apply -->
-                                    McLaren begins production of the F1, designed by Gordon Murray, with backing from
-                                    Ron Dennis.
-                                    Peter Stevens finalizes the car's exterior and interior design.The F1 features a
-                                    unique
-                                    three-seat layout with a central driving position and a lightweight carbon-fiber
-                                    monocoque.
-                                </p>
-                                <div class="classboxy"></div>
-                                <div>
+                                <div class="classboxy code code--left aos-init aos-animate" data-aos="fade-up"
+                                    data-aos-duration="3000"></div>
+                                <div class="code code--left aos-init aos-animate" data-aos="fade-up"
+                                    data-aos-duration="3000">1992</div>
+                                <div class="code code--left aos-init aos-animate" data-aos="fade-up"
+                                    data-aos-duration="3000">
+                                    <p><!-- justification to apply -->
+                                        McLaren begins production of the F1, designed by Gordon Murray, with backing
+                                        from
+                                        Ron Dennis.
+                                        Peter Stevens finalizes the car's exterior and interior design.The F1 features a
+                                        unique
+                                        three-seat layout with a central driving position and a lightweight carbon-fiber
+                                        monocoque.
+                                    </p>
+                                </div>
+                                <div class="classboxy code code--left aos-init aos-animate" data-aos="fade-up"
+                                    data-aos-duration="3000"></div>
+                                <div  data-aos="fade-up" data-aos-duration="3000">
                                     1993
                                 </div>
-                                <p><!-- justification to apply -->
-                                    First customer cars are delivered, showcasing the car's innovative design.Initial
-                                    reviews praise
-                                    its
-                                    driver-focused engineering, high-quality craftsmanship, and groundbreaking
-                                    aerodynamics.McLaren
-                                    continues
-                                    fine-tuning performance aspects, ensuring it remains competitive among supercars.
-                                </p>
+                                <div data-aos="fade-up" data-aos-duration="3000">
+                                    <p><!-- justification to apply -->
+                                        First customer cars are delivered, showcasing the car's innovative
+                                        design.Initial
+                                        reviews praise
+                                        its
+                                        driver-focused engineering, high-quality craftsmanship, and groundbreaking
+                                        aerodynamics.McLaren
+                                        continues
+                                        fine-tuning performance aspects, ensuring it remains competitive among
+                                        supercars.
+                                    </p>
+                                </div>
                                 <div class="classboxy"></div>
                             </div>
                         </div>
@@ -162,7 +174,7 @@
                             <div class="col-md-7 col-12 pt-2 d-flex align-items-center">
                                 <iframe style="width: 854px; height: 450px;"
                                     src="https://www.youtube.com/embed/93CjrQDC0Ic?si=Cf63d5Qtciru0iVi"
-                                    title="YouTube video player"frameborder="0"
+                                    title="YouTube video player" frameborder="0"
                                     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                                     referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
                             </div>
