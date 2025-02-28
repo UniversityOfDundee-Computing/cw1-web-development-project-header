@@ -335,31 +335,31 @@
                     <span class="mclaren">McLaren</span> <span class="f1">F1</span>
                 </h1>
                 <p class="lead">Step into a world of exhilaration with McLaren Formula 1.</p>
-                <a href="#" class="custom-cta btn-lg">Discover</a>
+                <button class="custom-cta btn-lg" onclick="scrollToSection()">Discover</button>
             </div>
         </div>
     </section>
 
     <!-- motorsport -->
-    <section class="motorsport-section">
+    <section id="Motosport" class="motorsport-section">
         <div class="container">
             <div class="row">
                 <div class="col-12 col-md-4">
                     <div class="motorsport-item motorsport95">
                         <div class="hover-image"></div>
-                        <a href="#">F1 GTR 95</a>
+                        <a href="/motorsport/gtr1995.html">F1 GTR 95</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="motorsport-item motorsport96">
                         <div class="hover-image"></div>
-                        <a href="#">F1 GTR 96</a>
+                        <a href="/motorsport/alljapan.html">F1 GTR 96</a>
                     </div>
                 </div>
                 <div class="col-12 col-md-4">
                     <div class="motorsport-item motorsport97">
                         <div class="hover-image"></div>
-                        <a href="#">F1 GTR 97</a>
+                        <a href="/motorsport/bmwmotorsport.html">F1 GTR 97</a>
                     </div>
                 </div>
             </div>
@@ -376,7 +376,7 @@
                         headlights, a heightened bumper and dampened performance figures including handling and braking
                         compared to the European F1, due to road legality issues. It weighs in at 1,288.2 kg (2,840 lb).
                     </p>
-                    <a href="#">Find out more</a>
+                    <a href="https://en.wikipedia.org/wiki/McLaren_F1">Find out more</a>
                 </div>
                 <div class="col-12 col-md-7">
                     <img src="Materials/mclaren.jpg" alt="img1">
@@ -399,7 +399,7 @@
                         modification to the F1 GTR in order to remain competitive. These modifications were so vast that
                         McLaren would be required to build a production road-legal car on which the new race cars would
                         be based.</p>
-                    <a href="#">Find out more</a>
+                    <a href="https://en.wikipedia.org/wiki/McLaren_F1">Find out more</a>
                 </div>
             </div>
         </div>
@@ -415,7 +415,7 @@
                         km/h), which is less than the standard version because of added aerodynamic drag, despite
                         identical gear ratios. In the place of the small dynamic rear wing there is a considerably
                         larger, fixed CFRP rear wing mounted on the back of the vehicle.</p>
-                    <a href="#">Find out more</a>
+                    <a href="https://en.wikipedia.org/wiki/McLaren_F1">Find out more</a>
                 </div>
                 <div class="col-12 col-md-7">
                     <img src="Materials/Mask group_LM.png" alt="img3">
@@ -448,7 +448,12 @@
             </div>
         </div>
     </footer>
-
+    <script>
+        function scrollToSection() {
+        const section = document.getElementById("motorsport");
+        section.scrollIntoView({ behavior: "smooth" });
+    }
+    </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 
