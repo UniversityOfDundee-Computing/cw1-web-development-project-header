@@ -9,10 +9,14 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- Bootstrap link -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <!-- Here is the navbar font-family import for Roboto and Space Grotesk -->
+    <!-- Slider css file -->
     <link rel="stylesheet" href="slider.css">
+    <!-- Motorsport css file -->
+    <link rel="stylesheet" href="motorsport.css">
+
 
 
     <title>Mclaren F1</title>
@@ -56,13 +60,13 @@
     </div>
     <div class="container text-center my-5 container-hover">
         <div>
-            <h2 class="fw-bold text-uppercase">McLAREN F1
+            <h2 class="fw-bold ">McLAREN <strong style="color: #ff7200;">F1</strong>
                 <small class="text-muted">MOTORSPORT</small>
             </h2>
         </div>
     </div>
     <div class="text-center mx-auto w-75 mt-4">
-        <h5 class="fw-semibold">Welcome to Mclaren F1 Motorsport Page</h5>
+        <h5 class="fw-semibold">Welcome to McLaren F1 Motorsport Page</h5>
         <p class="lead">Following its initial launch as a road car, motorsports teams convinced McLaren to build
             racing
             versions
@@ -84,67 +88,91 @@
     </div>
 
 
+    <!-- Slider -->
+    <div class="main-slider">
 
-    <div>
-        <main>
-            <ul class='slider'>
-                <li class='item'
-                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/1995_McLaren_F1_GTR_%2820195044452%29.jpg/1024px-1995_McLaren_F1_GTR_%2820195044452%29.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>F1 GTR 1995</h2>
-                        <p class='description'>A 1995-spec F1 GTR, chassis #006R at the Goodwood Festival of Speed
-                            sporting
-                            the famous 'Harrods' livery </p>
-                        <a href="#f1 GTR 1995"><button>Read More</button></a>
-                    </div>
-                </li>
-                <li class='item'
-                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/28/Brands_Hatch-1996-09-08-006.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>F1 GTR 1996</h2>
-                        <p class='description'> A 1996-spec F1 GTR, chassis #015R at the Brands Hatch circuit</p>
-                        <a href="#f1gtr996"><button>Read More</button></a>
-                    </div>
-                </li>
-                <li class='item'
-                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Parabolica_McLaren_F1_GTR.jpg/1024px-Parabolica_McLaren_F1_GTR.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>F1 GTR 1997</h2>
-                        <p class='description'> A 1997-spec F1 GTR "Long Tail", chassis #027R of Parabolica
-                            Motorsports
-                            during an FIA GT Championship event </p>
-                        <a href=""><button>Read More</button></a>
-                    </div>
-                </li>
-                <li class='item'
-                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Fina_McLaren_Pits.jpg/1024px-Fina_McLaren_Pits.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>BMW Motorsport</h2>
-                        <p class='description'>The BMW Motorsport entry during the 1997 FIA GT Donington 4 Hours
-                            race
-                        </p>
-                        <a href="" class="button"><button>Read More</button></a>
-                    </div>
-                </li>
-                <li class='item'
-                    style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/FoS20162016_0625_082817AA_%2827801509712%29.jpg/1024px-FoS20162016_0625_082817AA_%2827801509712%29.jpg')">
-                    <div class='content'>
-                        <h2 class='title'>All Japan Grand touring 1996</h2>
-                        <p class='description'>The 1996 F1 GTR of Team Lark on display
-                        </p>
-                        <button>Read More</button>
-                    </div>
-                </li>
-            </ul>
-            <div class='arrow'>
-                <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
-                <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
-            </div>
-        </main>
-
-
+        <ul class='slider'>
+            <li class='item'
+                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/1995_McLaren_F1_GTR_%2820195044452%29.jpg/1024px-1995_McLaren_F1_GTR_%2820195044452%29.jpg')">
+                <div class='content'>
+                    <h2 class='title'>F1 GTR 1995</h2>
+                    <p class='description'>A 1995-spec F1 GTR, chassis #006R at the Goodwood Festival of Speed
+                        sporting
+                        the famous 'Harrods' livery </p>
+                    <a href="motorsport/gtr1995.html"><button>Read More</button></a>
+                </div>
+            </li>
+            <li class='item'
+                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/2/28/Brands_Hatch-1996-09-08-006.jpg')">
+                <div class='content'>
+                    <h2 class='title'>F1 GTR 1996</h2>
+                    <p class='description'> A 1996-spec F1 GTR, chassis #015R at the Brands Hatch circuit</p>
+                    <a href="motorsport/gtr1996.html"><button>Read More</button></a>
+                </div>
+            </li>
+            <li class='item'
+                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/2/29/Parabolica_McLaren_F1_GTR.jpg/1024px-Parabolica_McLaren_F1_GTR.jpg')">
+                <div class='content'>
+                    <h2 class='title'>F1 GTR 1997</h2>
+                    <p class='description'> A 1997-spec F1 GTR "Long Tail", chassis #027R of Parabolica
+                        Motorsports
+                        during an FIA GT Championship event </p>
+                    <a href="motorsport/gtr1997.html"><button>Read More</button></a>
+                </div>
+            </li>
+            <li class='item'
+                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Fina_McLaren_Pits.jpg/1024px-Fina_McLaren_Pits.jpg')">
+                <div class='content'>
+                    <h2 class='title'>BMW Motorsport</h2>
+                    <p class='description'>The BMW Motorsport entry during the 1997 FIA GT Donington 4 Hours
+                        race
+                    </p>
+                    <a href="motorsport/bmwmotorsport.html" class="button"><button>Read More</button></a>
+                </div>
+            </li>
+            <li class='item'
+                style="background-image: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/85/FoS20162016_0625_082817AA_%2827801509712%29.jpg/1024px-FoS20162016_0625_082817AA_%2827801509712%29.jpg')">
+                <div class='content'>
+                    <h2 class='title'>All Japan Grand touring 1996</h2>
+                    <p class='description'>The 1996 F1 GTR of Team Lark on display
+                    </p>
+                    <a href="motorsport/alljapan.html"><button>Read More</button></a>
+                </div>
+            </li>
+        </ul>
+        <div class='arrow'>
+            <ion-icon class='btn prev' name="arrow-back-outline"></ion-icon>
+            <ion-icon class='btn next' name="arrow-forward-outline"></ion-icon>
+        </div>
 
     </div>
+
+    <!-- Footer -->
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <ul class="footer-list">
+                        <li><img src="Materials/logo footer org.png" alt="logo-foot-org"></li>
+                        <li><a href="#">Careers</a></li>
+                        <li><a href="#">Investors</a></li>
+                        <li><a href="#">Services</a></li>
+                        <li><a href="#">Community</a></li>
+                        <li><a href="#">Cookies Policy</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                        <li>
+                            <p>McLaren Racing 2025</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-12 col-md-6 d-flex align-items-end justify-content-end">
+                    <img src="Materials/logo top.png" alt="bw-logo" class="footer-img">
+                </div>
+            </div>
+        </div>
+    </footer>
+
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
     <script>
