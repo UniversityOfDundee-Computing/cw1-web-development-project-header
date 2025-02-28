@@ -32,7 +32,6 @@
         <label class="nav-label" for="hamburger">
             <i class="fa-solid fa-bars"></i>
         </label>
-        <!-- Navigation Links -->
         <ul id="navlist">
             <li>
                 <a href="Index.html">Home</a>
@@ -52,11 +51,7 @@
         </ul>
     </nav>
     <div class="page_sec container" style="display: flex;">
-        <div class="mode_switch col-1">
-            <input type="checkbox" id="theme-toggle">
-            <label for="theme-toggle" class="theme-label"></label>
-        </div>
-        <div id="intro_video" class="col-11">
+        <div id="intro_video" class="col-12">
             <iframe width="1280" height="600" src="https://www.youtube.com/embed/UiDKAbCisTQ?si=gm1bh86mBVfub77P"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
@@ -258,7 +253,8 @@
                                 <div class="classboxy animate__fadeInUp"></div>
                             </div>
                             <div class="col-7 image-container">
-                                <img id="x3" src="Raikkonen-McLaren-MP4-20-Japanese-GP-F1-2005-Photo-McLaren.jpg" alt="Fading Border">
+                                <img id="x3" src="Raikkonen-McLaren-MP4-20-Japanese-GP-F1-2005-Photo-McLaren.jpg"
+                                    alt="Fading Border">
                             </div>
                         </div>
                     </div>
@@ -280,8 +276,7 @@
                         <div class="row align-items-center">
                             <div class="col-7 image-container">
                                 <img id="x1" src="XPB_142363_1200px.jpg" alt="Fading Border">
-                                <img id="x2"
-                                    src="_methode_times_prod_web_bin_c0ac918b-b91c-4bad-b26d-da54bba8be6b.jpg"
+                                <img id="x2" src="_methode_times_prod_web_bin_c0ac918b-b91c-4bad-b26d-da54bba8be6b.jpg"
                                     alt="Fading Border">
                             </div>
                             <div class="col-5 _text">
@@ -314,26 +309,47 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 d-flex">
                     <ul class="footer-list">
-                        <li><img src="Materials/logo footer org.png" alt="logo-foot-org"></li>
+                        <li><img src="Materials/logo footer org.png" alt="logo-foot-org" class="footer-img"></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Investors</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Community</a></li>
                         <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a
+                                href="mailto:support@mclaren.com?subject=Info%20Request&body=Hi%20all,%20I%20would%20like%20more%20informations%20about%20your%20cars%20available.">Contact
+                                Us</a></li>
                         <li>
                             <p>McLaren Racing 2025</p>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-end justify-content-end">
-                    <img src="Materials/logo top.png" alt="bw-logo" class="footer-img">
+                    <ul class="footer-list">
+                        <li><button class="back-to-top" onclick="scrollToTop()">Go back up</button></li>
+                        <li><img src="Materials/logo top.png" alt="bw-logo" class="footer-img"></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
+
+    <script>
+        function scrollToSection() {
+            const section = document.getElementById("Motorsport");
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
+    </script>
+
 </body>
 
 </html>
