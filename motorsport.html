@@ -31,7 +31,7 @@
     <header>
         <nav>
             <!--  <Mclaren logo and link to homepage and display the logo on the Navbar -->
-            <a href="homepage.html" id="logo"><img src="McLaren_Racing_logo.svg" alt="mclaren logo"></a>
+            <a href="Index.html" id="logo"><img src="McLaren_Racing_logo.svg" alt="mclaren logo"></a>
             <!-- hamburger menue -->
             <input type="checkbox" id="hamburger" />
             <label class="nav-label" for="hamburger">
@@ -40,10 +40,10 @@
             <!-- Navigation Links -->
             <ul id="navlist">
                 <li>
-                    <a href="homepage.html" class="active">Home</a>
+                    <a href="Index.html" class="active">Home</a>
                 </li>
                 <li>
-                    <a href="#Variants">Variants</a>
+                    <a href="Variants/variants.html">Variants</a>
                 </li>
                 <li>
                     <a href="motorsport.html">Motorsport</a>
@@ -158,22 +158,27 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 d-flex">
                     <ul class="footer-list">
-                        <li><img src="Materials/logo footer org.png" alt="logo-foot-org"></li>
+                        <li><img src="Materials/logo footer org.png" alt="logo-foot-org" class="footer-img"></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Investors</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Community</a></li>
                         <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
+                        <li><a
+                                href="mailto:support@mclaren.com?subject=Info%20Request&body=Hi%20all,%20I%20would%20like%20more%20informations%20about%20your%20cars%20available.">Contact
+                                Us</a></li>
                         <li>
                             <p>McLaren Racing 2025</p>
                         </li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-end justify-content-end">
-                    <img src="Materials/logo top.png" alt="bw-logo" class="footer-img">
+                    <ul class="footer-list">
+                        <li><button class="back-to-top" onclick="scrollToTop()">Go back up</button></li>
+                        <li><img src="Materials/logo top.png" alt="bw-logo" class="footer-img"></li>
+                    </ul>
                 </div>
             </div>
         </div>
@@ -191,6 +196,14 @@
         }
 
         document.addEventListener('click', activate, false);
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
     </script>
 </body>
 
