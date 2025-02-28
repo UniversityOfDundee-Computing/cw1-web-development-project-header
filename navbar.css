@@ -15,7 +15,7 @@ nav {
     /* font family that we imported from google fonts */
     font-family: "Space Grotesk", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 700;
+    font-weight: 500;
     font-style: normal;
     display: flex;
     align-items: center;
@@ -59,6 +59,7 @@ input[type="checkbox"] {
     display: none;
 }
 
+
 /* unordered list */
 #navlist {
     list-style: none;
@@ -89,6 +90,7 @@ input[type="checkbox"] {
     background-color: #ff7200;
     border-radius: 0.5em;
 }
+
 
 /* Active links styling */
 /* Active class adds a white bottom border to highlight the currently active page in the navbar */
