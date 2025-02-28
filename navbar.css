@@ -1,4 +1,6 @@
 /* Here is the navbar font-family import for Roboto and Space Grotesk */
+/* Yash Bishnoi */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Space+Grotesk&display=swap');
 
 /* Global styles */
@@ -138,10 +140,10 @@ input[type="checkbox"] {
         justify-content: center;
         background-color: #ffffff;
         gap: 2em;
-        top: 93.39px;
+        top: 87px;
         width: 100%;
         /* The links are centered and the menu takes full height of the screen */
-        height: calc(100vh - 93.39px);
+        height: calc(100vh - 87px);
         transition: left 0.3s ease;
 
     }
