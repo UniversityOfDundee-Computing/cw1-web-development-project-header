@@ -1,6 +1,5 @@
 body {
     position: relative;
-    font-family: 'Arial', sans-serif;
     color: #d35e10;
     overflow-x: hidden;
     font-family: 'Space Grotesk', sans-serif;
@@ -8,6 +7,9 @@ body {
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    /* color:(var(--text-color)); */
+    background-color: var(--bg-color);
+    transition: background 0.3s, color 0.3s;
 }
 
 body::before{
@@ -33,6 +35,7 @@ body::before{
     position: absolute;
     z-index: -10;
 }
+
 .classboxy{
     position: relative;
     left: 50%;
@@ -40,12 +43,37 @@ body::before{
     height:100px;
     background: #d35e10;
 }
+
 #_1992_1994_1 {
     top: -250px;
     left:5px;
     width: 500px;
     /* max-height: 350px; */
     mask-image: radial-gradient(ellipse, rgba(255, 255, 255, 1) 25%, rgba(255, 110, 0, 0) 70%);
+}
+#x1 {
+    top: -350px;
+    left:-100px;
+    width: 500px;
+    /* max-height: 350px; */
+    mask-image: radial-gradient(ellipse, rgba(255, 255, 255, 1) 50%, rgba(255, 110, 0, 0) 80%);
+}
+#x2 {
+    top: 50px;
+    left:300px;
+    width: 500px;
+    /* max-height: 350px; */
+    mask-image: radial-gradient(ellipse, rgba(255, 255, 255, 1) 50%, rgba(0, 0, 0, 0) 90%);
+}
+#x3 {
+    display: flex;
+    flex-wrap:wrap ;
+    top: -225px;
+    left:10%;
+    width: 90%;
+    height: 500px;
+    /* max-height: 350px; */
+    mask-image: radial-gradient(ellipse, rgba(255, 255, 255, 1) 100%, rgba(0, 0, 0, 0) 100%);
 }
 #_1992_1994_2 {
     top: -150px;
@@ -66,7 +94,7 @@ body::before{
 .filling-button {
     position: relative;
     overflow: hidden;
-    color: #ff7200;
+    color: black;
     font-weight: bold;
     border: 2px solid #ff7200;
     background-color: white;
@@ -79,6 +107,7 @@ body::before{
     content: "";
     position: absolute;
     left: 0;
+    color: black;
     bottom: 0;
     width: 0;
     height: 100%;
@@ -95,6 +124,7 @@ body::before{
     position: relative;
     z-index: 1;
     transition: color 0.5s;
+    color: black;
 }
 
 .filling-button:hover span {
@@ -162,8 +192,89 @@ body::before{
     padding-bottom: 15px;
 }
 
+.accordion-body {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+}
 
-/* iframe{
-    padding-top: 4vh;
-    
-} */
+.accordion-collapse.show .accordion-body {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.animate__fadeInUp{
+    /* display: inline-block; */
+    /* margin: 0 0.5rem; */
+  
+    animation: fadeInUp; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 3s; /* don't forget to set a duration! */
+  }
+
+  .accordion-item:hover .accordion-button span {
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+.page_sec{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#intro_video{
+    display: flex;
+    flex-wrap: wrap;
+    position:relative; 
+    width:100vw;
+    margin-top:2%;
+    height: 100vh;
+    margin-bottom:-10%;
+}
+
+/* Default (Light Mode) */
+:root {
+    --bg-color: #ffffff; /* Light background */
+}
+
+/* Dark Mode when checkbox is checked */
+#theme-toggle:checked ~ body {
+    --bg-color: #121212; /* Dark background */
+}
+
+/* Apply the background color */
+body {
+    background-color: var(--bg-color);
+    transition: background 0.3s;
+}
+
+/* Hide the checkbox */
+#theme-toggle {
+    display: none;
+}
+
+/* Label acts as the toggle button */
+.theme-label {
+    display: inline-block;
+    cursor: pointer;
+    background: #f0f0f0;
+    color: #000;
+    padding: 10px 20px;
+    border-radius: 5px;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Change button text for Dark Mode */
+#theme-toggle:checked + .theme-label::after {
+    content: " ☀️ Light Mode";
+}
+
+.theme-label::after {
+    content: " 🌙 Dark Mode";
+}
+
+.mode_switch{
+
+    position: relative;
+    margin-top: 2%;
+    padding: 0;
+
+}
