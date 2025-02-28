@@ -138,10 +138,10 @@ input[type="checkbox"] {
         justify-content: center;
         background-color: #ffffff;
         gap: 2em;
-        top: 93.39px;
+        top: 87px;
         width: 100%;
         /* The links are centered and the menu takes full height of the screen */
-        height: calc(100vh - 93.39px);
+        height: calc(100vh - 87px);
         transition: left 0.3s ease;
 
     }

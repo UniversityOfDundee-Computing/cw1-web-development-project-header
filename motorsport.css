@@ -1,4 +1,28 @@
-/* footer */
+/* Zoom in effect of motorsport */
+.animate__zoomInRight {
+    display: inline-block;
+    margin: 0 0.5rem;
+    animation: zoomInRight;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1.5s;
+    /* don't forget to set a duration! */
+
+}
+
+
+/* tada effect */
+.animate__tada {
+    display: inline-block;
+    margin: 0 0.5rem;
+
+    animation: tada;
+    /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 1s;
+    /* don't forget to set a duration! */
+    animation-iteration-count: infinite;
+}
+
+/*  footer */
 footer {
     background-color: #484B50;
     border-bottom: 5px solid #ff7300;
