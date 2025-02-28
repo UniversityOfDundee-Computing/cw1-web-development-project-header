@@ -50,7 +50,6 @@
             width: 100%;
             position: relative;
             border-bottom: 5px solid #ff7300;
-
         }
 
         .hero-section::before {
@@ -98,7 +97,6 @@
             padding: 10px 100px;
             text-decoration: none;
             font-weight: 200;
-
         }
 
         .custom-cta:hover {
@@ -231,7 +229,6 @@
         .prototypes p {
             font-size: larger;
             margin-bottom: 25px;
-
         }
 
         .prototypes a {
@@ -263,17 +260,18 @@
         footer {
             background-color: #484B50;
             border-bottom: 5px solid #ff7300;
-            height: 500px;
             width: 100%;
-            padding-top: 150px;
-            margin-top: 200px;
-
+            padding: 50px 15px;
+            margin-top: 100px;
+            display: flex;
+            justify-content: center;
         }
 
         .footer-list {
             list-style-type: none;
             padding: 0;
             margin: 0;
+            width: 100%;
         }
 
         .footer-list li {
@@ -282,6 +280,7 @@
 
         .footer-list p {
             color: white;
+            margin: 0;
         }
 
         .footer-list a {
@@ -297,14 +296,81 @@
             max-width: 200px;
             padding-bottom: 15px;
         }
+
+        .back-to-top {
+            padding: 10px 50px;
+            background-color: transparent;
+            color: white;
+            border: 2px solid rgb(255, 255, 255);
+            cursor: pointer;
+            margin: auto;
+            display: inline-block;
+        }
+
+        .back-to-top:hover {
+            border: 2px solid #ff7300;
+            background-color: #ff7300;
+        }
+
+        @media (max-width: 767.98px) {
+            footer {
+                padding: 30px 15px;
+                text-align: center;
+            }
+
+            .footer-list {
+                text-align: center;
+            }
+
+            .footer-img {
+                max-width: 150px;
+                margin: 0 auto;
+                display: block;
+            }
+
+            .col-12.col-md-6 {
+                margin-bottom: 20px;
+            }
+
+            .d-flex.align-items-end.justify-content-end {
+                justify-content: center !important;
+                align-items: center !important;
+            }
+
+            .back-to-top {
+                margin: 20px auto;
+            }
+        }
+
+        @media (min-width: 768px) {
+        .footer-list {
+            text-align: left;
+            }
+
+        .col-12.col-md-6:nth-child(2) .footer-list {
+            text-align: right;
+            }
+
+        .footer-img {
+            margin-top: 10px;
+            margin-right: 0;
+            margin-left: 0;
+            margin-bottom: 0;
+            }
+
+        .back-to-top {
+            margin: 0 auto;
+            margin-right: 12px;
+            }
+        }
     </style>
 </head>
 
 <body>
     <nav>
-        <!--  <Mclaren logo and link to homepage and display the logo on the Navbar -->
+        <!-- McLaren logo and link to homepage and display the logo on the Navbar -->
         <a href="homepage.html" id="logo"><img src="McLaren_Racing_logo.svg" alt="mclaren logo"></a>
-        <!-- hamburger menue -->
+        <!-- hamburger menu -->
         <input type="checkbox" id="hamburger" />
         <label class="nav-label" for="hamburger">
             <i class="fa-solid fa-bars"></i>
@@ -327,13 +393,13 @@
                 <a href="ref.html">Reference</a>
             </li>
         </ul>
-
     </nav>
+
     <section class="hero-section">
         <div class="hero-container">
             <div class="hero-content">
                 <h1 class="display-4">
-                    <span class="mcLaren">McLaren</span> <span class="f1">F1</span>
+                    <span class="mclaren">McLaren</span> <span class="f1">F1</span>
                 </h1>
                 <p class="lead">Step into a world of exhilaration with McLaren Formula 1.</p>
                 <button class="custom-cta btn-lg" onclick="scrollToSection()">Discover</button>
@@ -366,6 +432,7 @@
             </div>
         </div>
     </section>
+
     <!-- prototypes -->
     <section class="prototypes">
         <h1>AMERITECH</h1>
@@ -429,33 +496,42 @@
     <footer>
         <div class="container">
             <div class="row">
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-6 d-flex">
                     <ul class="footer-list">
-                        <li><img src="Materials/logo footer org.png" alt="logo-foot-org"></li>
+                        <li><img src="Materials/logo footer org.png" alt="logo-foot-org" class="footer-img"></li>
                         <li><a href="#">Careers</a></li>
                         <li><a href="#">Investors</a></li>
                         <li><a href="#">Services</a></li>
                         <li><a href="#">Community</a></li>
                         <li><a href="#">Cookies Policy</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li>
-                            <p>McLaren Racing 2025</p>
-                        </li>
+                        <li><a href="mailto:support@mclaren.com?subject=Info%20Request&body=Hi%20all,%20I%20would%20like%20more%20informations%20about%20your%20cars%20available.">Contact Us</a></li>
+                        <li><p>McLaren Racing 2025</p></li>
                     </ul>
                 </div>
                 <div class="col-12 col-md-6 d-flex align-items-end justify-content-end">
-                    <img src="Materials/logo top.png" alt="bw-logo" class="footer-img">
+                    <ul class="footer-list">
+                        <li><button class="back-to-top" onclick="scrollToTop()">Go back up</button></li>
+                        <li><img src="Materials/logo top.png" alt="bw-logo" class="footer-img"></li>
+                    </ul>
                 </div>
             </div>
         </div>
     </footer>
+
     <script>
         function scrollToSection() {
-        const section = document.getElementById("Motorsport");
-        section.scrollIntoView({ behavior: "smooth" });
-    }
+            const section = document.getElementById("Motorsport");
+            section.scrollIntoView({ behavior: "smooth" });
+        }
+    </script>
+    <script>
+        function scrollToTop() {
+            window.scrollTo({
+                top: 0,
+                behavior: "smooth"
+            });
+        }
     </script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
